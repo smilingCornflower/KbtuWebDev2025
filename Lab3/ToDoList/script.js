@@ -1,6 +1,7 @@
 const taskInput = document.getElementById('taskInput');
 const addBtn = document.getElementById('addBtn');
-const todoList = document.getElementById('todoList');
+const todoListCompleted = document.getElementById('todoListComleted');
+const todoListUncompleted = document.getElementById('todoListUncomleted');
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
@@ -43,10 +44,16 @@ function createTaskElement(task, index) {
 }
 
 function renderTasks() {
-    todoList.innerHTML = '';
+    todoListCompleted.innerHTML = '';
+    todoListUncompleted.innerHTML = '';
     tasks.forEach((task, index) => {
-        todoList.appendChild(createTaskElement(task, index));
+        if (task.done) {
+            todoListCompleted.appendChild(createTaskElement(task, index));
+        } else {
+            todoListUncompleted.appendChild(createTaskElement(task, index));
+        }
     });
+
 }
 
 addBtn.addEventListener('click', () => {

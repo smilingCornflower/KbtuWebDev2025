@@ -52,7 +52,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eee;
 }
 
 .todo-list li:last-child {
