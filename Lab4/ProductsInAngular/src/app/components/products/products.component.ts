@@ -25,4 +25,11 @@ export class ProductsComponent {
             },
         );
     }
+    shareToTelegram(product: Product) {
+        window.open(`https://t.me/share/url?url=${encodeURIComponent(product.link)}`, '_blank');
+    }
+
+    shareToWhatsApp(product: Product) {
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(product.name)} ${encodeURIComponent(product.link)}`, '_blank');
+    }
 }

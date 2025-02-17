@@ -12,5 +12,9 @@
         <div class="product-card-rating">
             <p>rating: {{ product.rating }}  ⭐</p>
         </div>
+        <div class="product-card-share">
+            <button (click)="shareToTelegram(product)">Telegram</button>
+            <button (click)="shareToWhatsApp(product)">Whatsapp</button>
+        </div>
     </div>
 </div>
