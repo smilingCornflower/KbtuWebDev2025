@@ -1,0 +1,1 @@
+backend dir /Users/nauzybekturganbayev/Main/Projects/PythonStudy

@@ -1,0 +1,15 @@
+.add-container {}
+.add-forms {
+    border: 1px solid black;
+}
+.add-forms > div {
+    width: 100px;
+    display: flex;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+.input-file {}
+.input-name {}
+.input-descr {}
+.input-link{}

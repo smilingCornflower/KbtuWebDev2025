@@ -1,0 +1,10 @@
+<div class="add-container">
+    <form action="" class="add-forms">
+        <div class="input-file"><input type="file"><p>Выберите картинку</p></div>
+        <div class="input-name"><input [(ngModel)]="name" type="text" placeholder="name"><p>Напишите название</p></div>
+        <div class="input-descr"><input [(ngModel)]="description" type="text" placeholder="description"><p>Напишите описание</p></div>
+        <div class="input-link"><input [(ngModel)]="description" type="text" placeholder="link">Ссылка на товар</div>
+        <button class="send" (click)="PostData()">Подтвердить</button>
+    </form>
+</div>
+
