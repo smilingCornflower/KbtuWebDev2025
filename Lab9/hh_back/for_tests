@@ -1,0 +1,6 @@
+http://localhost:8000/api/companies/
+http://localhost:8000/api/companies/db2c3a53-eace-47d5-a799-da3d18888193/
+http://localhost:8000/api/companies/db2c3a53-eace-47d5-a799-da3d18888193/vacancies/
+http://localhost:8000/api/vacancies/
+localhost:8000/api/vacancies/7a2b70f7-1dea-44c3-806f-b3af39f3dcb6/
+localhost:8000/api/vacancies/top_ten/
